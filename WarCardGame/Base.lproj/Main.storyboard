@@ -49,9 +49,12 @@
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80m-1f-B0A">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80m-1f-B0A" userLabel="Deal Button">
                                         <rect key="frame" x="94.333333333333343" y="200" width="81.666666666666657" height="31"/>
                                         <state key="normal" image="dealbutton"/>
+                                        <connections>
+                                            <action selector="dealTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZrA-S2-Q6v"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <variation key="heightClass=compact-widthClass=compact" spacing="20"/>
@@ -110,6 +113,12 @@
                             <constraint firstItem="qpO-m2-CJP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xU2-Vj-HmL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="leftImageView" destination="PWT-oZ-O12" id="2Ki-Za-gLj"/>
+                        <outlet property="leftScoreLabel" destination="d87-8i-TVX" id="w6k-34-hgl"/>
+                        <outlet property="rightImageView" destination="K9s-kg-F5X" id="8y5-Bk-aFi"/>
+                        <outlet property="rightScoreLabel" destination="drB-pm-6XK" id="2aN-zf-qDH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
